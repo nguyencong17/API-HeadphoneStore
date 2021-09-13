@@ -1,0 +1,52 @@
+@baseUrl=http://localhost:3000/api
+@resouceName=products
+# Products
+
+# @name getAll
+GET {{baseUrl}}/{{resouceName}}
+
+###
+# @name filter
+GET {{baseUrl}}/{{resouceName}}?price_gte=800
+
+###
+# @name filterProduct
+GET {{baseUrl}}/{{resouceName}}?name_like=Fantastic 
+
+###
+# @name pagination
+GET {{baseUrl}}/{{resouceName}}?_page=1&_limit=4
+
+###
+# @name sort
+GET {{baseUrl}}/{{resouceName}}?_sort=price&_order=asc
+
+###
+# @name add
+POST {{baseUrl}}/{{resouceName}}
+Content-Type: application/json
+
+{
+    "categoryId": "490290aa-902b-4e6a-8e5c-27e6d1812351",
+    "name": "Fantastic Plastic Gloves Hungary",
+    "price": 1000,
+    "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    "image": "http://placeimg.com/400/400"
+}
+
+###
+
+# @name update
+PATCH  {{baseUrl}}/{{resouceName}}/2
+Content-Type: application/json
+
+{
+    "name" : "Silicon"
+}
+
+###
+
+# @name delete
+DELETE   {{baseUrl}}/{{resouceName}}/4
+
+
