@@ -29,11 +29,7 @@ const imageList2 = [
   "./assets/image/Heaphone/blog/7.jpg",
   "./assets/image/Heaphone/blog/8.jpg",
   "./assets/image/Heaphone/blog/9.jpg",
-  "./assets/image/Heaphone/blog/10.jpg",
-  "./assets/image/Heaphone/blog/11.jpg",
-  "./assets/image/Heaphone/blog/12.jpg",
-  "./assets/image/Heaphone/blog/13.jpg",
-  ];
+];
 
 
 //Random data
