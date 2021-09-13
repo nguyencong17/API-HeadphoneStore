@@ -83,7 +83,7 @@ const randomPostList = (n) => {
       id: faker.random.uuid(),
       name: faker.commerce.productName(),
       date: faker.date.future(),
-      image: imageList2[Math.floor(Math.random()*imageList.length)],
+      image: imageList2[Math.floor(Math.random()*imageList.length)] || "./assets/image/Heaphone/blog/9.jpg",
       description: faker.commerce.productDescription(),
       createdAt: Date.now(),
       updateAt: Date.now(),
