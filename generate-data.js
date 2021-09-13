@@ -2,6 +2,25 @@ const faker = require('faker');
 const fs = require('fs');
 //set local to use Vietnamese
 faker.locale = 'vi';
+const imageList = [
+"./image/1.jpg",
+"./image/2.jpg",
+"./image/3.jpg",
+"./image/4.jpg",
+"./image/5.jpg",
+"./image/6.jpg",
+"./image/7.jpg",
+"./image/8.jpg",
+"./image/9.jpg",
+"./image/10.jpg",
+"./image/11.jpg",
+"./image/12.jpg",
+"./image/13.jpg",
+];
+// for(let i = 0 ; i < imageList.length; i++){
+  
+//   console.log(item);
+// }
 
 //Random data
 const randomCategory = (n) => {
@@ -35,7 +54,7 @@ const randomProductList = (categoriesList, numberOfProducts) => {
         name: faker.commerce.productName(),
         price: Number.parseFloat(faker.commerce.price()),
         description: faker.commerce.productDescription(),
-        image: faker.image.imageUrl(400, 400),
+        image: imageList[Math.floor(Math.random()*imageList.length)]
       };
 
       productList.push(product);
