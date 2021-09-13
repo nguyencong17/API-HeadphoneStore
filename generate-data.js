@@ -3,19 +3,19 @@ const fs = require('fs');
 //set local to use Vietnamese
 faker.locale = 'vi';
 const imageList = [
-"./image/1.jpg",
-"./image/2.jpg",
-"./image/3.jpg",
-"./image/4.jpg",
-"./image/5.jpg",
-"./image/6.jpg",
-"./image/7.jpg",
-"./image/8.jpg",
-"./image/9.jpg",
-"./image/10.jpg",
-"./image/11.jpg",
-"./image/12.jpg",
-"./image/13.jpg",
+"./assets/image/Heaphone/product/1.jpg",
+"./assets/image/Heaphone/product/2.jpg",
+"./assets/image/Heaphone/product/3.jpg",
+"./assets/image/Heaphone/product/4.jpg",
+"./assets/image/Heaphone/product/5.jpg",
+"./assets/image/Heaphone/product/6.jpg",
+"./assets/image/Heaphone/product/7.jpg",
+"./assets/image/Heaphone/product/8.jpg",
+"./assets/image/Heaphone/product/9.jpg",
+"./assets/image/Heaphone/product/10.jpg",
+"./assets/image/Heaphone/product/11.jpg",
+"./assets/image/Heaphone/product/12.jpg",
+"./assets/image/Heaphone/product/13.jpg",
 ];
 // for(let i = 0 ; i < imageList.length; i++){
   
